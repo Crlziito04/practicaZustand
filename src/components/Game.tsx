@@ -13,6 +13,7 @@ import { Question as TypeQuestion } from "../types";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { qtcreatorDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material";
+import { Footer } from "./Footer";
 
 const getBgColor = (info: TypeQuestion, index: number) => {
   const { userSelectedAnswer, correctAnswer } = info;
@@ -103,6 +104,7 @@ export function Game() {
         </IconButton>
       </Stack>
       <Question info={questionInfo} />
+      <Footer />
     </>
   );
 }
